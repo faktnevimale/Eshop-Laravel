@@ -3,6 +3,7 @@
 
 @section('content')
     <div class="container py-10 mx-auto">
+        <div class="h-16"></div>
         <h1 class="text-3xl font-semibold text-center mb-8 text-white">Naše Produkty</h1>
 
         <!-- Inline Style pro Grid -->
@@ -58,7 +59,7 @@
             @foreach($products as $product)
                 <div class="product-card">
                     <img src="https://via.placeholder.com/300" alt="{{ $product->name }}" class="product-image">
-                    <div class="p-4">
+                    <div class="p-4 text-center">
                         <h2 class="text-xl font-semibold mb-2 text-center">{{ $product->name }}</h2>
                         <p class="text-gray-600 mb-4 product-description">
                             {{ $product->description }}
